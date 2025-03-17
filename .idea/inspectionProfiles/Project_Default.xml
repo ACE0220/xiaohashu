@@ -1,0 +1,30 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="VulnerableLibrariesGlobal" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="xiaohashu-auth" />
+          <option value="xiaohashu-auth" />
+          <option value="xiaohashu-auth" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="org.springframework.boot:spring-boot-autoconfigure:3.0.2" />
+          <option value="ch.qos.logback:logback-classic:1.4.5" />
+          <option value="com.jayway.jsonpath:json-path:2.7.0" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="不可利用" />
+          <option value="不可利用" />
+          <option value="不可利用" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
