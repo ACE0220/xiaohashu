@@ -1,0 +1,19 @@
+2025-03-18 00:18:07.280 [main] INFO  cn.ace.xiaohashu.auth.XiaohashuAuthApplication - Starting XiaohashuAuthApplication using Java 17.0.12 with PID 19808 (E:\programming_projects\xiaohashu\xiaohashu-auth\target\classes started by 89504 in E:\programming_projects\xiaohashu)
+2025-03-18 00:18:07.282 [main] INFO  cn.ace.xiaohashu.auth.XiaohashuAuthApplication - The following 1 profile is active: "dev"
+2025-03-18 00:18:08.335 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-18 00:18:08.348 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-18 00:18:08.349 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-03-18 00:18:08.424 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-18 00:18:08.425 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1109 ms
+2025-03-18 00:18:08.800 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-03-18 00:18:09.376 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-03-18 00:18:09.614 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-03-18 00:18:09.620 [main] INFO  cn.ace.xiaohashu.auth.XiaohashuAuthApplication - Started XiaohashuAuthApplication in 2.719 seconds (process running for 3.153)
+2025-03-18 00:18:33.952 [http-nio-8080-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_8dce74b15a139a5e13c45ebd78fed47a=1739956922,1740038017,1741620311,1741857390;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2025-03-18 00:18:33.966 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-18 00:18:33.966 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-18 00:18:33.967 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-18 00:18:34.009 [http-nio-8080-exec-1] WARN  o.s.core.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: cn.ace.xiaohashu.auth.controller.TestController
+2025-03-18 00:19:18.677 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-03-18 00:19:18.687 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
