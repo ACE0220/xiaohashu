@@ -1,6 +1,5 @@
-package cn.ace.xiaohashu.auth.controller;
+package cn.ace.xiaohashu.auth.domain.dataobject;
 
-import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,8 +11,16 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class User {
-    @NotBlank(message = "昵称不能为空")
-    private String nickName;
+public class RolePermissionRelDO {
+    private Long id;
+
+    private Long roleId;
+
+    private Long permissionId;
+
     private LocalDateTime createTime;
+
+    private LocalDateTime updateTime;
+
+    private Boolean isDeleted;
 }

@@ -38,7 +38,19 @@ spring:
           config:
             multi-statement-allow: true
       connection-properties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKGd/d6EpNs+hfFmKDD8UaxJgB5GsSu0tqKuGpQ9TaKVUJm7b7Lkq4aANEz88LTfk6gjk4m0Iw77/4nfEZowJ6ECAwEAAQ==
-
+  data:
+    redis:
+      database: 0
+      host: 192.168.174.128
+      port: 6379
+      password: abc123456
+      timeout: 5s
+      lettuce:
+        pool:
+          max-active: 200
+          max-wait: -1ms
+          min-idle: 0
+          max-idle: 10
 logging:
   level:
     cn.ace.xiaohashu.auth.domain.mapper: debug

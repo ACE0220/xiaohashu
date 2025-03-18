@@ -6,39 +6,27 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserDO {
+public class RoleDO {
     private Long id;
 
-    private String xiaohashuId;
+    private String roleName;
 
-    private String password;
+    private String roleKey;
 
-    private String nickname;
+    private Byte status;
 
-    private String avatar;
+    private Integer sort;
 
-    private Date birthday;
-
-    private String backgroundImg;
-
-    private String phone;
-
-    private Byte sex;
-
-    private Integer status;
-
-    private String introduction;
+    private String remark;
 
     private LocalDateTime createTime;
 
     private LocalDateTime updateTime;
 
     private Boolean isDeleted;
-
 }

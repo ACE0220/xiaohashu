@@ -18,14 +18,20 @@ import java.util.Optional;
 public class GlobalExceptionHandler {
 
     /**
-     * 捕获自定义业务异常
-     * @return
+     * 捕获 guava 参数校验异常
      */
     @ExceptionHandler({ BizException.class })
     @ResponseBody
-    public Response<Object> handleBizException(HttpServletRequest request, BizException e) {
-        log.warn("{} request fail, errorCode: {}, errorMessage: {}", request.getRequestURI(), e.getErrorCode(), e.getErrorMessage());
-        return Response.fail(e);
+    public Response<Object> handleIllegalArgumentException(HttpServletRequest request, IllegalArgumentException e) {
+        // 参数错误异常码
+        String errorCode = ResponseCodeEnum.PARAM_NOT_VALID.getErrorCode();
+
+        // 错误信息
+        String errorMessage = e.getMessage();
+
+        log.warn("{} request error, errorCode: {}, errorMessage: {}", request.getRequestURI(), errorCode, errorMessage);
+
+        return Response.fail(errorCode, errorMessage);
     }
 
     /**
